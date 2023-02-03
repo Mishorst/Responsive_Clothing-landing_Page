@@ -420,9 +420,27 @@ img {
   right: calc(50% - 2rem);
 }
 
+/* .swiper-wrapper {
+  grid-template-columns: repeat(1, max-content);
+  justify-content: center;
+} */
+
 /**********************/
 /* BRANDS */
 /**********************/
+.brand_container {
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+.brand_img {
+  width: 120px;
+}
+
+.brand_img:nth-child(even) {
+  margin-top: 2rem;
+}
 
 /**********************/
 /* FOOTER */
