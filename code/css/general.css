@@ -374,8 +374,51 @@ img {
 /**********************/
 /* PRODUCTS */
 /**********************/
+.products_container {
+  padding-bottom: 5rem;
+}
+
+.products_card {
+  width: 270px;
+}
+
+.products_img {
+  margin-bottom: 1rem;
+}
+
+.products_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.products_price {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
 
 /* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 2rem);
+}
+
+.swiper-button-next {
+  right: calc(50% - 2rem);
+}
 
 /**********************/
 /* BRANDS */
