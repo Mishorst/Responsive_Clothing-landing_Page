@@ -105,19 +105,55 @@ img {
 /**********************/
 /* THEME */
 /**********************/
-
 /**********************/
 /* Variables Dark theme */
 /**********************/
+body.dark-theme {
+  --bg-color: hsl(220, 18%, 13%);
+  --bg-color-light: hsl(220, 18%, 23%);
+  --title-color: hsl(220, 8%, 95%);
+  --text-color: hsl(220, 4%, 65%);
+  --body-color: hsl(220, 18%, 18%);
+  --container-color: hsl(220, 18%, 21%);
+}
 
 /**********************/
 /* Button Dark/Light */
 /**********************/
+.change-theme {
+  color: var(--title-color);
+  font-size: 1.125rem;
+  cursor: pointer;
+}
 
 /**********************/
 /* Color changes in some parts of 
     the website, in dark theme  */
 /**********************/
+.dark-theme .scroll-header {
+  box-shadow: 0 2px 8px hsla(220, 18%, 8%, 0.3);
+}
+
+.dark-theme .nav_menu {
+  background-color: var(--container-color);
+}
+
+.dark-theme .nav_menu,
+.dark-theme .scrollup {
+  box-shadow: 0 4px 8px hsla(220, 18%, 8%, 0.3);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(220, 18%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 18%, 25%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(220, 18%, 35%);
+}
 
 /**********************/
 /* REUSABLE CSS CLASSES */
@@ -184,6 +220,7 @@ img {
     margin: 0 auto;
     padding: 1.25rem 2.8rem;
     border-radius: 0.5rem;
+    transition: 0.4s; /*For animation dark mode*/
   }
   .nav_list {
     display: flex;
@@ -222,6 +259,7 @@ img {
 .home {
   background-color: var(--bg-color);
   overflow: hidden;
+  transition: 0.4s; /*For animation dark mode*/
 }
 
 .home_container {
@@ -333,6 +371,7 @@ img {
 .collection {
   background-color: var(--bg-color-light);
   overflow: hidden;
+  transition: 0.4s; /*For animation dark mode*/
 }
 
 .coll_container {
@@ -531,7 +570,7 @@ img {
 /* CSROLL BAR */
 /**********************/
 ::-webkit-scrollbar {
-  width: 6rem;
+  width: 0.6rem;
   border-radius: 0.5rem;
   background-color: hsl(220, 8%, 76%);
 }
@@ -548,8 +587,29 @@ img {
 /**********************/
 /* SCROLL UP */
 /**********************/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 12px hsla(220, 18%, 40%, 0.15);
+  display: inline-flex;
+  padding: 0.35rem;
+  color: var(--title-color);
+  font-size: 1.1rem;
+  border-radius: 50%;
+  z-index: var(--z-tooltip);
+  transition: 0.3s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
 
 /* Show Scroll Up*/
+.show-scroll {
+  bottom: 8.5rem;
+}
 
 /**********************/
 /* BREAKPOINTS */
