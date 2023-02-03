@@ -18,7 +18,10 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="code/css/general.css" />
@@ -184,7 +187,64 @@
       </section>
 
       <!--==================== PRODUCTS ====================-->
-      <section class="products section" id="products"></section>
+      <section class="products section" id="products">
+        <h2 class="section_title">Best Products</h2>
+
+        <div class="products_container container swiper">
+          <div class="swiper-wrapper">
+            <article class="products_card swiper-slide">
+              <img
+                src="assets/products/product1.png"
+                alt="products image"
+                class="products_img"
+              />
+
+              <h2 class="products_title">Gotland black Jacket</h2>
+              <span class="products_price">$124.99 </span>
+            </article>
+
+            <article class="products_card swiper-slide">
+              <img
+                src="assets/products/product2.png"
+                alt="products image"
+                class="products_img"
+              />
+
+              <h2 class="products_title">Black Sports Shorts</h2>
+              <span class="products_price">$34.99</span>
+            </article>
+
+            <article class="products_card swiper-slide">
+              <img
+                src="assets/products/product3.png"
+                alt="products image"
+                class="products_img"
+              />
+
+              <h2 class="products_title">Knox Quilted Jacket</h2>
+              <span class="products_price">$97.99</span>
+            </article>
+
+            <article class="products_card swiper-slide">
+              <img
+                src="assets/products/product4.png"
+                alt="products image"
+                class="products_img"
+              />
+
+              <h2 class="products_title">Blue Sport Pants</h2>
+              <span class="products_price">$69.99</span>
+            </article>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-line"></i>
+          </div>
+        </div>
+      </section>
 
       <!--==================== BRANDS ====================-->
       <section class="brand section"></section>
@@ -199,7 +259,7 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="code/js/main.js"></script>
