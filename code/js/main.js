@@ -14,7 +14,7 @@ let swiperProducts = new Swiper(".products_container", {
   spaceBetween: 32,
   grabCursor: true,
   centeredSlides: true,
-  slidePerView: "auto",
+  slidesPerView: "auto",
   loop: true,
 
   navigation: {
