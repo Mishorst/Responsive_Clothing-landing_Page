@@ -5,29 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/fav-icon/favicon.png"
+      type="image/x-icon"
+    />
 
     <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="" />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="code/css/general.css" />
 
     <title>Responsive clothing ecommerce - Bedimcode</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo"> Shop </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#new" class="nav_link">
+                <i class="ri-price-tag-3-line"></i>
+                <span>New</span>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#collection" class="nav_link">
+                <i class="ri-compass-line"></i>
+                <span>Collection</span>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#products" class="nav_link">
+                <i class="ri-t-shirt-line"></i>
+                <span>Products</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- theme change button -->
+        <i class="ri-moon-line"></i>
+      </nav>
+    </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_data">
+            <h1 class="home_title">
+              New Clothing <br />
+              Collection
+            </h1>
+
+            <p class="home_des">
+              The new collection of clothing from <br />
+              the best brands this year.
+            </p>
+
+            <a href="#new" class="button_link">
+              Explore
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="home_images">
+            <img src="assets/home/home1.png" alt="home image" />
+            <img src="assets/home/home2.png" alt="home image" />
+          </div>
+        </div>
+      </section>
 
       <!--==================== NEW ====================-->
-      <section class="new section" id="new"></section>
+      <section class="new section" id="new">
+        <h2 class="section_title">New Categories</h2>
+
+        <div class="new_container container grid">
+          <article class="new_card">
+            <img src="assets/new/new1.png" alt="new image" class="new_img" />
+
+            <a href="#" class="new_link">
+              <div class="new_data">
+                <h2 class="new_title">Hoodie & Sweatshirt</h2>
+                <span class="new_subtitle">Winter collection</span>
+              </div>
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="new_card">
+            <img src="assets/new/new2.png" alt="new image" class="new_img" />
+
+            <a href="#" class="new_link">
+              <div class="new_data">
+                <h2 class="new_title">Pants & Jackets</h2>
+                <span class="new_subtitle">Winter collection</span>
+              </div>
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <article class="new_card">
+            <img src="assets/new/new3.png" alt="new image" class="new_img" />
+
+            <a href="#" class="new_link">
+              <div class="new_data">
+                <h2 class="new_title">Coats & Coat Sets</h2>
+                <span class="new_subtitle">Winter collection</span>
+              </div>
+
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+        </div>
+      </section>
 
       <!--==================== COLLECTION ====================-->
       <section class="collection section" id="collection"></section>
@@ -51,6 +165,6 @@
     <script src=""></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="code/js/main.js"></script>
   </body>
 </html>
