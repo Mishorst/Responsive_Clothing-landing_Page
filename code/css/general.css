@@ -327,6 +327,49 @@ img {
 /**********************/
 /* COLLECTION */
 /**********************/
+.collection {
+  background-color: var(--bg-color-light);
+  overflow: hidden;
+}
+
+.coll_container {
+  position: relative;
+  height: 571px;
+  display: grid;
+  justify-items: center;
+}
+
+.coll_title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.coll_explore {
+  display: grid;
+  column-gap: 2rem;
+  position: absolute;
+}
+
+.coll_explore:nth-child(2) {
+  grid-template-columns: 230px max-content;
+  bottom: 1rem;
+  margin-right: 5rem;
+}
+
+.coll_explore:nth-child(1) {
+  grid-template-columns: max-content 230px;
+  top: 0;
+  margin-left: 5rem;
+}
+
+.coll_data-men {
+  margin-top: 2.5rem;
+}
+
+.coll_data-women {
+  align-self: flex-end;
+  margin-bottom: 2.5rem;
+}
 
 /**********************/
 /* PRODUCTS */
