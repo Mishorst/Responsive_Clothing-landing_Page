@@ -530,6 +530,20 @@ img {
 /**********************/
 /* CSROLL BAR */
 /**********************/
+::-webkit-scrollbar {
+  width: 6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(220, 8%, 76%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 8%, 64%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(220, 8%, 54%);
+}
 
 /**********************/
 /* SCROLL UP */
