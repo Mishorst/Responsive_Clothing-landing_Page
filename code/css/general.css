@@ -685,6 +685,33 @@ body.dark-theme {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .nav_menu {
+    width: 342px;
+  }
+
+  .footer_content {
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .home_container,
+  .new_container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+  }
+  .home_images {
+    margin-top: 6rem;
+  }
+
+  .brand_container {
+    grid-template-columns: repeat(4, max-content);
+  }
+
+  .footer_container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
 }
 
 /* For large devices */
